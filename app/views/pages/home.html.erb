@@ -1,3 +1,149 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<p>test test</p>
+<div class= "home-container">
+  <!-- NAVBAR -->
+  <div class= "la-navbar">
+    <div class="navbar-wagon">
+      <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
+        <img src="images/logo.png" alt="logo">
+      </a>
+
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <div class="navbar-wagon-item navbar-wagon-link">
+        <%= link_to 'CV'%>
+
+        </div>
+        <div class="navbar-wagon-item navbar-wagon-link">
+          <%= link_to 'Portfolio'%>
+        </div>
+        <div class="navbar-wagon-item navbar-wagon-link">
+          <%= link_to 'Contact me' %>
+        </div>
+
+        <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">CV</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Portfolio</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Contact me</a> -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class= "content">
+    <div class="main-image">
+      <%= image_tag 'blackwhite3.png'%>
+    </div>
+    <div class="photo name and role">
+      <div class="name-and-role">
+        <h2> Dania Aflak</h2>
+        <h3>Junior Full-Stack Developer</h3>
+      </div>
+      <div class="cv-photo content-photo">
+        <%= image_tag 'photocv.png'%>
+      </div>
+    </div>
+    <div class="presentation">
+      <h3>About me</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.</p>
+      <button>Download my resume</button>
+    </div>
+
+    <!-- MY SKILLS-ADJECTIVES -->
+    <div class="skills adjectives">
+      <div class="skill adjective">
+        <i class="fas fa-question"></i>
+        <h3> Curious</h3>
+      </div>
+      <div class="skill adjective">
+        <i class="fas fa-running"></i>
+        <h3> Dynamic</h3>
+      </div>
+      <div class="skill adjective">
+        <i class="far fa-laugh-beam"></i>
+        <h3> Joyful</h3>
+      </div>
+      <div class="skill adjective">
+        <i class="fas fa-book"></i>
+        <h3> Serious</h3>
+      </div>
+      <div class="skill adjective">
+        <i class="fas fa-mountain"></i>
+        <h3> Take risks</h3>
+      </div>
+      <div class="skill adjective">
+        <i class="fas fa-chart-line"></i>
+        <h3> Analytic & synthetic spirit</h3>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <h2 class=" titles title-languages">Languages</h2>
+    <div class="skills languages">
+        <div class="skill language french">
+          <%= image_tag 'francais', width: 130%>
+          <h3> French</h3>
+          <h4>Mother tongue</h4>
+        </div>
+        <div class="skill language arabic">
+          <%= image_tag 'arabe', width: 130%>
+          <h3> Arabic</h3>
+          <h4>Mother tongue</h4>
+        </div>
+        <div class="skill language english">
+          <%= image_tag 'anglais', width: 130%>
+          <h3> English</h3>
+          <h4>Fluent - TOEIC 885</h4>
+        </div>
+        <div class="skill language spanish">
+          <%= image_tag 'espagnol', width: 130%>
+          <h3> Spanish</h3>
+          <h4>Intermediate</h4>
+        </div>
+      </div>
+  </div>
+
+  <!-- INFORMATIQUE SKILLS -->
+  <h2 class="titles">Skills</h2>
+  <div class= "skills tools">
+    <div class = "skill coding-tools">
+      <i class="fas fa-laptop-code coding-logo-tool"></i>
+      <div class="tools-list coding-tools-list hidden">
+        <%= image_tag 'ruby.png', width: 100%>
+        <%= image_tag 'rails-logo.png', width: 100%>
+        <%= image_tag 'image HTML logo.png', width: 100%>
+        <%= image_tag 'logo CSS image.png', width: 100%>
+        <%= image_tag 'javascript.png', width: 100%>
+        <%= image_tag 'github-logo.png', width: 100%>
+        <%= image_tag 'bootstrap.png', width: 100%>
+        <%= image_tag 'heroku.png', width: 100%>
+      </div>
+    </div>
+    <div class="skill other-tools">
+      <i class="fas fa-tools other-logo-tool"></i>
+      <div class="tools-list other-tools-list hidden">
+        <%= image_tag 'hubspot 2.png', width: 100%>
+        <%= image_tag 'salesforce.png', width: 100%>
+        <%= image_tag 'IRI.png', width: 100%>
+        <%= image_tag 'kantar.png', width: 100%>
+        <%= image_tag 'nielsen.png', width: 100%>
+    </div>
+    </div>
+  </div>
+
+  <!-- MY EXPERIENCES -->
+  <div class="experiences">
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/daniaaf"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/dania-aflak/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Website designed and developed by Dania Aflak
+  </div>
+</div>
+</div>
