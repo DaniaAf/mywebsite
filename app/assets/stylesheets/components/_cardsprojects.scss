@@ -1,0 +1,15 @@
+.cards {
+  height: 300px;
+}
+
+.card-category {
+  height: 220px;
+  max-width: 47% !important;
+  margin: 20px auto 10px auto;
+  padding: 0 !important;
+}
+
+.card-category:hover{
+  height: 225px;
+  max-width: 47.5% !important;
+}
