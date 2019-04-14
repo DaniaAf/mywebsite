@@ -1,0 +1,115 @@
+.container_exp {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+article.card_exp {
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  left: 50%;*/
+  width: 350px;
+  height: 350px;
+  margin-bottom: 25px;
+/*  -webkit-transform: translate(-50%, -50%) translateZ(0);
+          transform: translate(-50%, -50%) translateZ(0);*/
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+article.card_exp .thumb_exp {
+  width: auto;
+  height: 260px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+article.card_exp .infos_exp {
+  width: auto;
+  height: 350px;
+  position: relative;
+  padding: 14px 24px;
+  background: #fff;
+  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+article.card_exp .infos_exp .title_exp {
+  position: relative;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  color: #152536;
+  font-family: "Grotesque Black", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px #32577f;
+}
+article.card_exp .infos_exp .flag_exp {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 35px;
+  height: 23px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
+  background-size: 100% auto;
+  display: inline-block;
+}
+article.card_exp .infos_exp .date_exp,
+article.card_exp .infos_exp .seats_exp {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: rgba(21, 37, 54, 0.7);
+  font-family: "Grotesque", sans-serif;
+}
+article.card_exp .infos_exp .seats_exp {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+article.card_exp .infos_exp .txt_exp {
+  font-family: "Merriweather", sans-serif;
+  line-height: 2;
+  font-size: 0.95rem;
+  color: rgba(21, 37, 54, 0.7);
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+article.card_exp .infos_exp .details_exp {
+  position: absolute;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  margin: 10px 0;
+  padding: 20px 24px;
+  letter-spacing: 1px;
+  color: #4e958b;
+  font-family: "Grotesque Black", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+article.card_exp:hover .infos_exp {
+  -webkit-transform: translateY(-260px);
+          transform: translateY(-260px);
+}
+article.card_exp:hover .infos_exp .seats_exp,
+article.card_exp:hover .infos_exp .txt_exp,
+article.card_exp:hover .infos_exp .details_exp {
+  opacity: 1;
+}
+
+
+/* MODAL card_experience when click on "more...'*/
+.fade.in {
+  z-index: 0;
+}
+
+.button_more {
+  cursor: pointer;
+}
