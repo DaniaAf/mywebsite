@@ -106,8 +106,8 @@ article.card_exp:hover .infos_exp .details_exp {
 
 
 /* MODAL card_experience when click on "more...'*/
-.fade.in {
-  z-index: 0;
+.modal-dialog {
+  z-index: inherit;
 }
 
 .button_more {

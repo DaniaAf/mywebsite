@@ -10,8 +10,7 @@
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
         <div class="navbar-wagon-item navbar-wagon-link">
-        <%= link_to 'CV'%>
-
+<!--           <a href="#about_me_anchor">About me</a> -->
         </div>
         <div class="navbar-wagon-item navbar-wagon-link">
           <%= link_to 'Portfolio'%>
@@ -40,10 +39,11 @@
         <h3>Junior Full-Stack Developer</h3>
       </div>
       <div class="cv-photo content-photo">
-        <%= image_tag 'photocv.png'%>
+        <%= image_tag 'photo_CV3 2.png'%>
       </div>
     </div>
     <div class="presentation">
+<!--       <div id="about_me_anchor"></div> -->
       <h3>About me</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.</p>
       <button>Download my resume</button>
@@ -78,7 +78,6 @@
     </div>
 
     <!-- LANGUAGES -->
-
     <h2 class=" titles title-languages">Languages</h2>
     <div class="skills languages">
       <div class="skill language french">
@@ -178,209 +177,48 @@
   </div>
 
   <!-- MY EXPERIENCES -->
-  <!-- <h2 class="titles">My experiences</h2>
-  <div class="experiences container">
-    <div class="row">
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Teacher Assistant @Le Wagon</h2>
-          <p>2019</p>
-        </div>
-      </div>
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Co-founder & Full-Stack developer @GreenGuide</h2>
-          <p>2019</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Chef de Projet Partenariats @Papernest</h2>
-          <p>2017-2018</p>
-        </div>
-      </div>
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Business Developper @Papernest</h2>
-          <p>2016-2017</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Assistante Category & Promotion Manager @Nestlé</h2>
-          <p>2015-2017</p>
-        </div>
-      </div>
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Assistante Category Manager @Beiersdorf (Nivea)</h2>
-          <p>2015</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Assistante Merchandising @La Martiniquaise</h2>
-          <p>2015</p>
-        </div>
-      </div>
-      <div class="card-product experience col-sm-6">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-        <div class="card-product-infos">
-          <h2>Autres</h2>
-          <p>< 2014</p>
-        </div>
-      </div>
-    </div>
-  </div>
- -->
-
-  <!-- MY EXPERIENCES -->
   <h2 class="titles">My experiences </h2>
   <div class="container container_exp">
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-            <h3 class="details_exp">event details</h3>
+      <% @experiences.each do |experience| %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp"><%= experience.role%><span class="flag_exp"></span></h2>
+              <h3 class="date_exp"><%= experience.datebegin %></h3>
+              <h3 class="seats_exp"><%= experience.company %></h3>
+              <p class="txt_exp">
+              <%= experience.description.slice(0..200) %>...
+              </p>
+              <h3 class="button_more" data-toggle="modal" data-target="<%="#exampleModalLong-#{experience.id}"%>">more...</h3>
+              <h3 class="details_exp">event details</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade" id="<%="exampleModalLong-#{experience.id}"%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><%=experience.company %></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <%= experience.description %>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-          </div>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-          </div>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-          </div>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-          </div>
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <article class="card_exp">
-          <div class="thumb_exp"></div>
-          <div class="infos_exp">
-            <h2 class="title_exp">new york city<span class="flag_exp"></span></h2>
-            <h3 class="date_exp">november 2 - 4</h3>
-            <h3 class="seats_exp">seats remaining: 2</h3>
-            <p class="txt_exp">
-            Join us for our Live Infinity Session in
-            beautiful New York City. This is a 3 day
-            intensive workshop where you'll learn
-            how to become a better version of...
-            </p>
-            <%= link_to 'more...'%>
-          </div>
-        </article>
-      </div>
+        </div>
+      <% end %>
     </div>
   </div>
-
-  <!-- TEST MODALES -->
-<!-- Button trigger modal -->
-<h3 class="button_more" data-toggle="modal" data-target="#exampleModalLong">more...</h3>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        BLBALABLABLABLBAL
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   <!-- MY PROJECTS -->
   <h2 class="titles">My projects</h2>
@@ -395,6 +233,54 @@
       </div>
     </div>
   </div>
+
+  <!-- EDUCATION -->
+  <h2 class="titles">Education</h2>
+  <section id="timeline">
+  <div class="tl-item">
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2011</p>
+    </div>
+    <div class="tl-content">
+      <h1>Lorem ipsum dolor sit</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2013</p>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2014</p>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2016</p>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <div class="footer">
