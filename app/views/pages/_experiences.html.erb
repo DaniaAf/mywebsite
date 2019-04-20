@@ -1,0 +1,353 @@
+  <!-- MY EXPERIENCES WITH SEED -->
+  <div class="experiences_paragraph">
+    <h2 class="titles">My experiences </h2>
+    <div class="container container_exp">
+      <div class="row row_experiences">
+        <% @experiences.each do |experience| %>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="card_exp">
+              <div class="thumb_exp" style="background-image: url(<%= image_path "#{experience.photo}" %>)">
+              </div>
+              <div class="infos_exp">
+                <h2 class="title_exp"><%= experience.role%></h2>
+                <h3 class="date_exp"><%= experience.datebegin %></h3>
+                <h3 class="seats_exp"><%= experience.company %></h3>
+                <p class="txt_exp">
+                <%= experience.description.slice(0..200) %>...
+                </p>
+                <h3 class="button_more details_exp" data-toggle="modal" data-target="<%="#exampleModalLong-#{experience.id}"%>">more...</h3>
+              </div>
+            </article>
+          </div>
+
+          <div class="modal fade" id="<%="exampleModalLong-#{experience.id}"%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle"><%=experience.company %></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <%= simple_format(experience.description) %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- <div class="experiences_paragraph">
+    <h2 class="titles">My experiences </h2>
+    <div class="container container_exp">
+      <div class="row row_experiences">
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp wagon_logo"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">Teacher Assistant</h2>
+              <h3 class="date_exp">Avril 2019</h3>
+              <h3 class="seats_exp">Le Wagon</h3>
+              <p class="txt_exp">
+              Aide les étudiants du wagon dans leurs exercices au cours de leur formation...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="<%="#exampleModalLong"%>">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade" id="<%="exampleModalLong"%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Le Wagon</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Aide les étudiants du wagon dans leurs exercices au cours de leur formation:<br>
+                - HTML/CSS <br>
+                - Ruby on Rails <br>
+                - Javascript
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp greenguide"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">Co-Founder & Full-Stack Developer</h2>
+              <h3 class="date_exp">Fevrier 2019</h3>
+              <h3 class="seats_exp">GrenGuide</h3>
+              <p class="txt_exp">
+              GreenGuide est une web app codée par une équipe 100% féminine. Il s’agit d’une carte interactive qui recense tous les lieux eco-responsable de Paris intramuros afin de faciliter les parisiens à adopt...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLonggreenguide">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLonggreenguide" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">GreenGuide</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Au sein du bootcamp du Wagon, 3 camarades et moi même avons entrepris un projet que nous avons codé en 10 jours: Green Guide. <br><br>
+                GreenGuide est une web app codée par une équipe 100% féminine. Il s’agit d’une carte interactive qui recense tous les lieux eco-responsable de Paris intramuros afin de faciliter les parisiens à adopter un comportement plus eco-responsable: espaces compostes, points recyclages, jardins partagés, marchés, friperies... Toutes les adresses éco-responsables (récupérées de la Mairie de Paris) sont recensées dans une seule et même web-app pour vous faciliter vos recherches et qui vous trace votre itinéraire en fonction de votre géolocalisation. <br><br>
+                La communauté GreenGuide vous conseille également : En effet en tant qu’utilisateur vous pouvez laisser des commentaires et des notes pour chaque lieu. C’est un peu le TripAdvisor de l’écologie ! <br>
+                Vous pouvez également suggérer des lieux s’ils ne sont pas référencés sur la carte, l’idée étant que les utilisateurs fassent eux-même vivre cette web-app. <br> <br>
+                - Pour accéder à l'app 👉<a href="http://bit.ly/2TLq3Pr"> ICI</a>  <br>
+                - Pour plus d'info, voici une vidéo de présentation 👉🏼 <a href="http://bit.ly/2u9TyMy"> ICI</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp papernest"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">Chef de Projet Partenariat</h2>
+              <h3 class="date_exp">Mai 2018</h3>
+              <h3 class="seats_exp">Papernest</h3>
+              <p class="txt_exp">
+              - Etude de marché sur un nouveau canal d’acquisition <br>
+              - Mise en place de la stratégie commerciale <br>
+              - Mise en place d’outils de suivi et KPI <br>
+              - Recrutement, formation et management d’une ambassadrice pap...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLongpapernest1">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLongpapernest1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Papernest</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                - Etude de marché sur un nouveau canal d’acquisition <br><br>
+                - Mise en place de la stratégie commerciale <br><br>
+                - Mise en place d’outils de suivi et KPI <br><br>
+                - Recrutement, formation et management d’une ambassadrice papernest
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp papernest"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">Business Developer/ Inside Sales</h2>
+              <h3 class="date_exp">Novembre 2017</h3>
+              <h3 class="seats_exp">Papernest</h3>
+              <p class="txt_exp">
+              - Prospection terrain & téléphonique <br>
+              - Négociation et mise en place de partenariats <br>
+              - Formation des équipes des partenaires <br>
+              - Suivi de la relation client <br>
+              - Formation des nouveaux business developer...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLongpapernest2">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLongpapernest2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Papernest</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                - Prospection terrain & téléphonique <br><br>
+                - Négociation et mise en place de partenariats <br><br>
+                - Formation des équipes des partenaires <br><br>
+                - Suivi de la relation client <br><br>
+                - Formation des nouveaux business developer
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp nestle"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">APPRENTIE- ASSISTANTE CATEGORY CHANNEL SALES DEVELOPMENT</h2>
+              <h3 class="date_exp">Juillet 2016</h3>
+              <h3 class="seats_exp">Nestlé</h3>
+              <p class="txt_exp">
+              Au sein d'une équipe de 3 managers (Business Analyst, Category Manager et Promotion Manager), j'ai pu travailler tout au long de ces 15 mois en collaboration étroite avec chacun d'eux sur différents pr...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLongnestle">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLongnestle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Nestlé</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Au sein d'une équipe de 3 managers (Business Analyst, Category Manager et Promotion Manager), j'ai pu travailler tout au long de ces 15 mois en collaboration étroite avec chacun d'eux sur différents projets et différents aspects commerciaux. <br><br>PROMOTION MANAGEMENT & BUSINESS ANALYSIS: <br>
+                - Développement d’outils de suivi & gestion de datas et de base de données importantes <br>
+                - Suivi et analyse de l’activité promotionnelle (via KPI distributeurs et consommateurs) <br>
+                - Aide au pilotage des volumes promotionnels <br>
+                - Pré évaluation et post évaluation promotionnelle <br>
+                - Travail sur les temps forts promotionnels en collaboration avec le Marketing et la Supply <br>
+                - Développement des PLV de théâtralisation (brief agence, marketing…) <br><br>
+                CATEGORY MANAGEMENT & BUSINESS ANALYSIS: <br>
+                - Gestion de projet en collaboration avec le panéliste IRI pour le développement d’outils d’analyse <br>
+                - Suivi et analyse de l’activité catégorielle (via KPI distributeurs et consommateurs) <br>
+                - Pilotage et suivi du volume d’offre par enseigne <br>
+                - Développement d’outils ad’hoc via des bases de données internes
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp beiersdorf"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">ASSISTANTE CATEGORY MANAGER</h2>
+              <h3 class="date_exp">Janvier 2016</h3>
+              <h3 class="seats_exp">Beiersdorf (Nivea)</h3>
+              <p class="txt_exp">
+              - Suivi et analyse des performances de la catégorie circuits et clients <br>
+              - Analyse des assortiments et recommandations d’optimisation <br>
+              - Participation aux démarches catégorielles <br>
+              - Préparation des points...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLongbeiersdorf">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLongbeiersdorf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Beiersdorf (Nivea)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                - Suivi et analyse des performances de la catégorie circuits et clients <br>
+                - Analyse des assortiments et recommandations d’optimisation <br>
+                - Participation aux démarches catégorielles <br>
+                - Préparation des points marchés catégoriels <br>
+                - Préparation des argumentations pour les plans d’action terrain <br>
+                - Analyse des performances des innovations NIVEA dans les enseignes <br>
+                - Construction des plans merchandising <br>
+                - Recommandation merchandising et élaboration des plans dans le cadre de partenariats 2016
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <article class="card_exp">
+            <div class="thumb_exp martiniquaise"></div>
+            <div class="infos_exp">
+              <h2 class="title_exp">ASSISTANTE MERCHANDISING OPÉRATIONNEL</span></h2>
+              <h3 class="date_exp">Juillet 2015</h3>
+              <h3 class="seats_exp">La Martiniquaise</h3>
+              <p class="txt_exp">
+              - Élaboration des préconisations merchandising magasin <br>
+              - Analyse des plans nationaux <br>
+              - Création de dossiers destinés à la force de vente <br>
+              - Développement d'argumentaires produits <br>
+              - Développement des PLV...
+              </p>
+              <h3 class="button_more details_exp" data-toggle="modal" data-target="#exampleModalLongmartiniquaise">more...</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal fade " id="exampleModalLongmartiniquaise" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">La Martiniquaise</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                - Élaboration des préconisations merchandising magasin <br>
+                - Analyse des plans nationaux <br>
+                - Création de dossiers destinés à la force de vente <br>
+                - Développement d'argumentaires produits <br>
+                - Développement des PLV (appel d'offre, brief créa, rdv fournisseurs, négociation...) -budget 30K€- <br>
+                - Veille concurrentielle <br>
+                - Suivi des indicateurs force de vente et analyse des performances <br>
+                - Analyse panels marques et lancements
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->

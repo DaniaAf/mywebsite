@@ -2,6 +2,26 @@
   position: relative;
 }
 
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: url("blackwhite3.png") fixed no-repeat top left;
+  width: 100%;
+  height: 100vh;
+}
+
+.fa-chevron-down {
+  // display: flex;
+  // justify-content: center;
+  font-size: 80px;
+  color: #F29798;
+}
+
+.fa-chevron-down:hover {
+    color: #ce8282;
+}
+
 .home-container {
   background-color: white;
 }
@@ -62,3 +82,21 @@
   font-size: 50px;
   color: $gray;
 }
+
+/////// PHOTO SEPARATOR /////
+
+.photo_separator1 {
+  background: url("https://images.unsplash.com/photo-1465060810938-30bbe7c40e76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1115&q=80") fixed no-repeat top left;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+}
+
+.photo_separator2 {
+  background: url("https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") fixed no-repeat top left;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+}
+
+

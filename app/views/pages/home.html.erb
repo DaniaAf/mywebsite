@@ -1,286 +1,66 @@
 <div class= "home-container">
   <!-- NAVBAR -->
-  <div class= "la-navbar">
-    <div class="navbar-wagon">
-      <!-- Logo -->
-      <a href="/" class="navbar-wagon-brand">
-        <img src="images/logo.png" alt="logo">
-      </a>
+  <%= render "navbar" %>
 
-      <!-- Right Navigation -->
-      <div class="navbar-wagon-right hidden-xs hidden-sm">
-        <div class="navbar-wagon-item navbar-wagon-link">
-<!--           <a href="#about_me_anchor">About me</a> -->
-        </div>
-        <div class="navbar-wagon-item navbar-wagon-link">
-          <%= link_to 'Portfolio'%>
-        </div>
-        <div class="navbar-wagon-item navbar-wagon-link">
-          <%= link_to 'Contact me' %>
-        </div>
+  <!-- HOME CONTENT : PHOTO, ABOUT ME, ADJECTIVES -->
+  <%= render "home_content" %>
 
-        <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">CV</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Portfolio</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Contact me</a> -->
+  <!-- LANGUAGES SECTION -->
+  <%= render "languages" %>
 
-      </div>
-
-    </div>
-  </div>
-
-  <!-- CONTENT -->
-  <div class= "content">
-    <div class="main-image">
-      <%= image_tag 'blackwhite3.png'%>
-    </div>
-    <div class="photo name and role">
-      <div class="name-and-role">
-        <h2> Dania Aflak</h2>
-        <h3>Junior Full-Stack Developer</h3>
-      </div>
-      <div class="cv-photo content-photo">
-        <%= image_tag 'photo_CV3 2.png'%>
-      </div>
-    </div>
-    <div class="presentation">
-<!--       <div id="about_me_anchor"></div> -->
-      <h3>About me</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, minus voluptatem tenetur quas commodi, reprehenderit sapiente voluptatibus ipsum, impedit deserunt omnis officiis dolore, nesciunt quibusdam necessitatibus ex consequuntur facere debitis.</p>
-      <button>Download my resume</button>
-    </div>
-
-    <!-- MY SKILLS-ADJECTIVES -->
-    <div class="skills adjectives">
-      <div class="skill adjective">
-        <i class="fas fa-question"></i>
-        <h3> Curious</h3>
-      </div>
-      <div class="skill adjective">
-        <i class="fas fa-running"></i>
-        <h3> Dynamic</h3>
-      </div>
-      <div class="skill adjective">
-        <i class="far fa-laugh-beam"></i>
-        <h3> Joyful</h3>
-      </div>
-      <div class="skill adjective">
-        <i class="fas fa-book"></i>
-        <h3> Serious</h3>
-      </div>
-      <div class="skill adjective">
-        <i class="fas fa-mountain"></i>
-        <h3> Take risks</h3>
-      </div>
-      <div class="skill adjective">
-        <i class="fas fa-chart-line"></i>
-        <h3> Analytic & synthetic spirit</h3>
-      </div>
-    </div>
-
-    <!-- LANGUAGES -->
-    <h2 class=" titles title-languages">Languages</h2>
-    <div class="skills languages">
-      <div class="skill language french">
-        <div class="container_langue">
-          <svg viewBox="0,0,100,100">
-            <circle class="inner" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-            <circle class="outer_fr" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-          </svg>
-        </div>
-        <h3> French</h3>
-        <h4>Mother tongue</h4>
-      </div>
-      <div class="skill language arabe">
-        <div class="container_langue">
-          <svg viewBox="0,0,100,100">
-            <circle class="inner" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-            <circle class="outer_ar" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-          </svg>
-        </div>
-        <h3> Arabic</h3>
-        <h4>Mother tongue</h4>
-      </div>
-      <div class="skill language english">
-        <div class="container_langue">
-          <svg viewBox="0,0,100,100">
-            <circle class="inner" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-            <circle class="outer_en" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-          </svg>
-        </div>
-        <h3> English</h3>
-        <h4>Fluent - TOEIC 885</h4>
-      </div>
-      <div class="skill language spanish">
-        <div class="container_langue">
-          <svg viewBox="0,0,100,100">
-            <circle class="inner" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-            <circle class="outer_es" cx="50" cy="50" r="45" fill="none" stroke-width="10"></circle>
-          </svg>
-        </div>
-        <h3> Spanish</h3>
-        <h4>Intermediate</h4>
-      </div>
-    </div>
+  <div class="photo_separator1"></div>
 
 
-<!--     <h2 class=" titles title-languages">Languages</h2>
-    <div class="skills languages">
-        <div class="skill language french">
-          <%= image_tag 'francais', width: 130%>
-          <h3> French</h3>
-          <h4>Mother tongue</h4>
-        </div>
-        <div class="skill language arabic">
-          <%= image_tag 'arabe', width: 130%>
-          <h3> Arabic</h3>
-          <h4>Mother tongue</h4>
-        </div>
-        <div class="skill language english">
-          <%= image_tag 'anglais', width: 130%>
-          <h3> English</h3>
-          <h4>Fluent - TOEIC 885</h4>
-        </div>
-        <div class="skill language spanish">
-          <%= image_tag 'espagnol', width: 130%>
-          <h3> Spanish</h3>
-          <h4>Intermediate</h4>
-        </div>
-      </div>
-  </div> -->
+  <!-- LANGUAGES SECTION -->
+  <%= render "coding_skills" %>
 
-  <!-- INFORMATIQUE SKILLS -->
-  <h2 class="titles">Skills</h2>
-  <div class= "skills tools">
-    <div class = "skill coding-tools">
-      <i class="fas fa-laptop-code coding-logo-tool"></i>
-      <div class="tools-list coding-tools-list hidden">
-        <%= image_tag 'ruby.png', width: 100%>
-        <%= image_tag 'rails-logo.png', width: 100%>
-        <%= image_tag 'image HTML logo.png', width: 100%>
-        <%= image_tag 'logo CSS image.png', width: 100%>
-        <%= image_tag 'javascript.png', width: 100%>
-        <%= image_tag 'github-logo.png', width: 100%>
-        <%= image_tag 'bootstrap.png', width: 100%>
-        <%= image_tag 'heroku.png', width: 100%>
-      </div>
-    </div>
-    <div class="skill other-tools">
-      <i class="fas fa-tools other-logo-tool"></i>
-      <div class="tools-list other-tools-list hidden">
-        <%= image_tag 'hubspot 2.png', width: 100%>
-        <%= image_tag 'salesforce.png', width: 100%>
-        <%= image_tag 'IRI.png', width: 100%>
-        <%= image_tag 'kantar.png', width: 100%>
-        <%= image_tag 'nielsen.png', width: 100%>
-    </div>
-    </div>
-  </div>
+  <div class="photo_separator2"></div>
 
-  <!-- MY EXPERIENCES -->
-  <h2 class="titles">My experiences </h2>
-  <div class="container container_exp">
-    <div class="row">
-      <% @experiences.each do |experience| %>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <article class="card_exp">
-            <div class="thumb_exp"></div>
-            <div class="infos_exp">
-              <h2 class="title_exp"><%= experience.role%><span class="flag_exp"></span></h2>
-              <h3 class="date_exp"><%= experience.datebegin %></h3>
-              <h3 class="seats_exp"><%= experience.company %></h3>
-              <p class="txt_exp">
-              <%= experience.description.slice(0..200) %>...
-              </p>
-              <h3 class="button_more" data-toggle="modal" data-target="<%="#exampleModalLong-#{experience.id}"%>">more...</h3>
-              <h3 class="details_exp">event details</h3>
-            </div>
-          </article>
-        </div>
 
-        <div class="modal fade" id="<%="exampleModalLong-#{experience.id}"%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle"><%=experience.company %></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <%= experience.description %>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
+
+  <%= render "experiences" %>
 
   <!-- MY PROJECTS -->
-  <h2 class="titles">My projects</h2>
-  <div class="cards container">
-    <div class="row">
-      <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        GreenGuide
-      </div>
+  <div class="projects_paragraph">
+    <h2 class="titles">My projects</h2>
+    <div class="cards container">
+      <div class="row">
+        <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          GreenGuide
+        </div>
 
-      <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-        Rent Your Skate
+        <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+          Rent Your Skate
+        </div>
       </div>
     </div>
   </div>
 
   <!-- EDUCATION -->
-  <h2 class="titles">Education</h2>
-  <section id="timeline">
-  <div class="tl-item">
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2011</p>
-    </div>
-    <div class="tl-content">
-      <h1>Lorem ipsum dolor sit</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-    </div>
+  <div class="education_paragraph">
+    <h2 class="titles">Education</h2>
+    <section id="timeline">
+      <% @educations.each do |education| %>
+        <div class="tl-item">
+          <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
+          </div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif"><%= education.dateend %></p>
+          </div>
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu"><%= education.school %></h1>
+            <h2><%= education.diploma %></h2>
+            <p> <%= simple_format(education.description) %> </p>
+          </div>
+        </div>
+      <% end %>
+    </section>
   </div>
 
-  <div class="tl-item">
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2013</p>
-    </div>
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
-      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
-    </div>
+  <!-- CONTACT ME -->
+  <div class="contact_me_paragraph">
+    <h2 class="titles">Contact me</h2>
   </div>
-
-  <div class="tl-item">
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2014</p>
-    </div>
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
-      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
-    <div class="tl-year">
-      <p class="f2 heading--sanSerif">2016</p>
-    </div>
-    <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
-      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
-    </div>
-  </div>
-</section>
 
   <!-- FOOTER -->
   <div class="footer">
@@ -293,3 +73,4 @@
   </div>
 </div>
 </div>
+
