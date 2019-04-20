@@ -2,7 +2,7 @@ import easyScroll from 'easy-scroll';
 
 const scrollAction = () => {
   const targetScroll = document.querySelector(".ancre_button_1");
-  console.log(targetScroll);
+  // console.log(targetScroll);
   const scrollButton = document.querySelector(".ancre_button_1")
   scrollButton.addEventListener("click", (event) => {
     easyScroll({
