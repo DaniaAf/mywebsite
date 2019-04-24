@@ -42,8 +42,8 @@
     <section id="timeline">
       <% @educations.each do |education| %>
         <div class="tl-item">
-<!--           <div class="tl-bg" style="background-image: url(<#%= image_path "#{education.photo}" %>)">
-          </div> -->
+          <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
+          </div>
           <div class="tl-year">
             <p class="f2 heading--sanSerif"><%= education.dateend %></p>
           </div>

@@ -6,8 +6,8 @@
         <% @experiences.each do |experience| %>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <article class="card_exp">
-<!--               <div class="thumb_exp" style="background-image: url(<#%= image_path "#{experience.photo}" %>)">
-              </div> -->
+              <div class="thumb_exp" style="background-image: url(<%= image_path "#{experience.photo}" %>)">
+              </div>
               <div class="infos_exp">
                 <h2 class="title_exp"><%= experience.role%></h2>
                 <h3 class="date_exp"><%= experience.datebegin %></h3>
