@@ -1,5 +1,5 @@
 class ExperiencesController < ApplicationController
-  # def home
-  #   @experiences = Experience.all
-  # end
+  def home
+    @experiences = Experience.all
+  end
 end
