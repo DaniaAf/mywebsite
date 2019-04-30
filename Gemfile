@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 gem 'mail_form'
+gem 'sendgrid-ruby'
 
 
 group :development do
