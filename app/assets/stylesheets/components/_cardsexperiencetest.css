@@ -100,12 +100,16 @@ article.card_exp .infos_exp .details_exp {
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
+article.card_exp:active .infos_exp,
 article.card_exp:hover .infos_exp {
   -webkit-transform: translateY(-260px);
           transform: translateY(-260px);
 }
+article.card_exp:active .infos_exp .seats_exp,
 article.card_exp:hover .infos_exp .seats_exp,
+article.card_exp:active .infos_exp .txt_exp,
 article.card_exp:hover .infos_exp .txt_exp,
+article.card_exp:active .infos_exp .details_exp,
 article.card_exp:hover .infos_exp .details_exp {
   opacity: 1;
 }
