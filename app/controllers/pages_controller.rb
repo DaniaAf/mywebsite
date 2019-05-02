@@ -3,9 +3,15 @@ class PagesController < ApplicationController
     @experiences = Experience.all
     @educations = Education.all
 
-    respond_to do |format|
-      format.html
-      format.js
+    @contact = Contact.new
+
+    @contact = Contact.new(params[:contact])
+    @contact.request = request
+    if @contact.deliver
+      flash.now[:error] = nil
+      flash.now[:notice] = 'Thank you for your message!'
+    else
+      flash.now[:error] = "Cannot send message."
     end
   end
 end
