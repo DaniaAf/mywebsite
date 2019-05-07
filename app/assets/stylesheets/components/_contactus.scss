@@ -1,0 +1,38 @@
+form#new_contact {
+  width: 40%;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+}
+
+.section_form{
+  margin-top: 13px;
+}
+
+input#contact_message {
+  height: 100px;
+}
+
+label {
+  color: #515150;
+}
+
+input.button {
+  margin-bottom: 20px;
+  margin-right: auto;
+  width: 25%;
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+
+  :hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+  }
+}

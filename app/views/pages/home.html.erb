@@ -21,20 +21,8 @@
   <%= render "experiences" %>
 
   <!-- MY PROJECTS -->
-  <div class="projects_paragraph">
-    <h2 class="titles">My projects</h2>
-    <div class="cards container">
-      <div class="row">
-        <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-          GreenGuide
-        </div>
+  <%= render "my_projects" %>
 
-        <div class="card-category col-sm-6" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-          Rent Your Skate
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- EDUCATION -->
   <div class="education_paragraph">
@@ -60,27 +48,35 @@
   <!-- CONTACT ME -->
   <div class="contact_me_paragraph">
     <h2 class="titles">Contact me</h2>
-      <%= form_for @contact do |f|  %>
-    <%= f.label :name %><br>
-    <%= f.text_field :name, required: true %>
+    <%= form_for @contact do |f|  %>
+      <div class="section_form">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, required: true %>
+      </div>
 
-    <br>
+      <br>
 
-    <%= f.label :email %><br>
-    <%= f.text_field :email, required: true %>
+      <div class="section_form">
+        <%= f.label :email %><br>
+        <%= f.text_field :email, required: true %>
+      </div>
 
-    <br>
+      <br>
 
-    <%= f.label :message %><br>
-    <%= f.text_field :message, as: :text %>
+      <div class="section_form message">
+        <%= f.label :message %><br>
+        <%= f.text_field :message, as: :text %>
+      </div>
 
-    <div class="hidden">
-      <%= f.label :nickname %><br>
-      <%= f.text_field :nickname, hint: 'leave this field blank' %>
-    </div>
+      <div class="hidden">
+        <%= f.label :nickname %><br>
+        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      </div>
 
-    <%= f.submit 'Send Message', class: "button" %>
-  <% end %>
+      <div class="section_form">
+        <%= f.submit 'Send Message', class: "button" %>
+      </div>
+    <% end %>
   </div>
 
   <!-- FOOTER -->

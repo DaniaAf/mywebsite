@@ -34,8 +34,8 @@ La communauté GreenGuide vous conseille également : En effet en tant qu’util
 
 Vous pouvez également suggérer des lieux s’ils ne sont pas référencés sur la carte, l’idée étant que les utilisateurs fassent eux-même vivre cette web-app.
 
-- Pour accéder à l\'app 👉  <a href='http://bit.ly/2TLq3Pr'>ICI</a>
-- Pour plus d\'info, voici une vidéo de présentation 👉🏼 <a href='http://bit.ly/2u9TyMy'>ICI</a>"
+- Pour accéder à l\'app 👉  <a href='https://bit.ly/2TLq3Pr' target=_blank>ICI</a>
+- Pour plus d\'info, voici une vidéo de présentation 👉🏼 <a href='https://bit.ly/2u9TyMy' target=_blank>ICI</a>"
   },
   {
     role: 'Chef de projet partenariat',
