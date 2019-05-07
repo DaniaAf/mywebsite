@@ -134,10 +134,18 @@ article.card_exp:hover .infos_exp .details_exp {
   }
 }
 
+#anchor_experiences{
+  padding-top: 72px;
+  margin-top: -72px;
+}
+
+.row.row_experiences{
+  border-bottom: solid;
+}
 /*
 EXPERIENCE UNE PAR UNE A LA MANO*/
 
-.wagon_logo{
+/*.wagon_logo{
   background: url("wagon_logo.png");
 
 }
@@ -160,4 +168,4 @@ EXPERIENCE UNE PAR UNE A LA MANO*/
 
 .martiniquaise {
   background: url("la_martiniquaise_logo.png");
-}
+}*/

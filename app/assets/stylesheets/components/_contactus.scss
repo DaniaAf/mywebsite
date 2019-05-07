@@ -9,6 +9,9 @@ input {
 
 .section_form{
   margin-top: 13px;
+  label, input {
+    font-family: 'Work Sans', sans-serif;
+  }
 }
 
 input#contact_message {
@@ -40,3 +43,10 @@ input.button {
 .contact-button{
   text-align: center;
 }
+
+#anchor_contact_me{
+  padding-top: 72px;
+  margin-top: -72px;
+}
+
+

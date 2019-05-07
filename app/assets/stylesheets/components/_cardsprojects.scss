@@ -38,6 +38,7 @@ button.card-category:hover{
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: #B2B2B2 1px solid;
   h3 {
+    font-family: 'Work Sans', sans-serif;
     color: #515150;
     margin: 0 0 4px 0;
     text-align: center;
@@ -52,6 +53,11 @@ button.card-category:hover{
 .carou-arrow {
   font-size: 30px;
   color: black;
+}
+
+#anchor_projects{
+  padding-top: 72px;
+  margin-top: -72px;
 }
 
 /////////////////////////////////////////////////////////////// LIKE HOME CONTENT

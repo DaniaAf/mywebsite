@@ -135,3 +135,8 @@ body {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
+
+#anchor_education{
+  padding-top: 72px;
+  margin-top: -72px;
+}
