@@ -21,18 +21,22 @@ label {
 
 input.button {
   margin-bottom: 20px;
-  margin-right: auto;
-  width: 25%;
-  color: #999999;
-  border: 1px solid #999999;
-  padding: 10px 15px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
+  // margin-right: auto !important;
+  width: 25% !important;
+  // color: #999999;
+  // border: 1px solid #999999;
+  // padding: 10px 15px;
+  // border-radius: 50px;
+  // font-weight: lighter;
+  // opacity: 0.6;
 
   :hover {
   opacity: 1;
   text-decoration: none;
   color: #999999;
   }
+}
+
+.contact-button{
+  text-align: center;
 }

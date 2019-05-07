@@ -1,17 +1,15 @@
 .projects_paragraph{
   border-top: solid;
   border-bottom: solid;
-  // border-width: 1px;
-  // border-color: #D1D1D1;
 }
 
 .rws_project {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("rent_your_skate.png");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), asset-url("rent_your_skate.png");
   background-size: cover;
 }
 
 .gg_project {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("greenguide.png");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), asset-url("greenguide.png");
   background-size: cover;
 }
 
@@ -23,17 +21,10 @@
   height: 300px;
 }
 
-// .card-category {
-//   height: 220px;
-//   max-width: 85% !important;
-//   margin: 20px auto 10px auto;
-//   padding: 0 !important;
-// }
 
 button.card-category{
   height: 240px;
   width: 100% !important;
-  // margin: 35px auto 55px auto;
   padding: 0 !important;
 
 }
@@ -53,8 +44,6 @@ button.card-category:hover{
   }
 }
 
-
-
 .carousel-item {
   text-align: center;
 }
@@ -67,69 +56,69 @@ button.card-category:hover{
 
 /////////////////////////////////////////////////////////////// LIKE HOME CONTENT
 
-.pro_projects {
-  display: flex;
-  align-items: center;
-  padding: 0 !important;
-  // min-height: 60vh;
-  width: 100% !important;
-  // border-top: solid;
-  // border-bottom: solid;
-}
-
-.rows_project {
-  border-top: solid;
-  border-bottom: solid;
-}
-
-// @media (min-width: 1200px) {
-//   .container {
-//     max-width: none;
-//   }
+// .pro_projects {
+//   display: flex;
+//   align-items: center;
+//   padding: 0 !important;
+//   // min-height: 60vh;
+//   width: 100% !important;
+//   // border-top: solid;
+//   // border-bottom: solid;
 // }
 
-.gg_logo {
-  height: 40vh;
-  padding: 0 !important;
-  background: url("greenguide.png");
-  background-size: cover;
-}
+// .rows_project {
+//   border-top: solid;
+//   border-bottom: solid;
+// }
 
-.rws_logo {
-  height: 40vh;
-  padding: 0 !important;
-  background: url("rent_your_skate.png");
-  background-size: cover;
-}
+// // @media (min-width: 1200px) {
+// //   .container {
+// //     max-width: none;
+// //   }
+// // }
 
-.explanations {
-  height: 40vh;
-  padding: 20px;
-  background-color: rgb(245,245,245);
-  border-left: solid;
-  border-right: solid;
-}
+// .gg_logo {
+//   height: 40vh;
+//   padding: 0 !important;
+//   background: url("greenguide.png");
+//   background-size: cover;
+// }
 
-.gg_images  {
-  height: 40vh;
-  padding: 0 !important;
-  background: url("GG3.png");
-  background-size: cover;
-}
+// .rws_logo {
+//   height: 40vh;
+//   padding: 0 !important;
+//   background: url("rent_your_skate.png");
+//   background-size: cover;
+// }
 
-.rws_images  {
-  height: 40vh;
-  padding: 0 !important;
-  background: url("rws_1.png");
-  background-size: cover;
-}
+// .explanations {
+//   height: 40vh;
+//   padding: 20px;
+//   background-color: rgb(245,245,245);
+//   border-left: solid;
+//   border-right: solid;
+// }
+
+// .gg_images  {
+//   height: 40vh;
+//   padding: 0 !important;
+//   background: asset-url("GG3.png");
+//   background-size: cover;
+// }
+
+// .rws_images  {
+//   height: 40vh;
+//   padding: 0 !important;
+//   background: asset-url("rws_1.png");
+//   background-size: cover;
+// }
 
 
-h3.projects_titles{
-  padding: 0;
-  margin: 20px 0 8px 0;
-  text-align: center;
-}
+// h3.projects_titles{
+//   padding: 0;
+//   margin: 20px 0 8px 0;
+//   text-align: center;
+// }
 
 
 
