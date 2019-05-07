@@ -24,6 +24,8 @@
 
 .home-container {
   background-color: white;
+  // background-color: #F3F6F8;
+  // background-color: #F5F5F5;
 }
 
 .content{
@@ -106,7 +108,16 @@
 }
 
 .photo_separator2 {
-  background: url("https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") fixed no-repeat top left;
+  background: url("https://images.unsplash.com/photo-1529661197280-63dc545366c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80") fixed no-repeat top left;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+.photo_separator3 {
+  background: url("wagon_locaux.png") fixed no-repeat top left;
   width: 100%;
   height: 60vh;
   background-size: cover;

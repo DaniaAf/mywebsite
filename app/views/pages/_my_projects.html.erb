@@ -1,12 +1,22 @@
 <h2 id="anchor_projects" class="titles">My Projects </h2>
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-1">
-      <div class="card-projects">
-        <button class="card-category rws_project" data-toggle="modal" data-target="#rwsModal"></button>
-        <h3> Rent your Skate</h3>
-      </div>
+  <div class="row row_projects">
 
+    <div class="col-sm-4 col-sm-offset-1">
+<!--       RENT YOUR SKATE CARD BUTTON -->
+      <button class="card-category" data-toggle="modal" data-target="#rwsModal">
+        <div class="card bg-white overflow-hidden shadow rounded">
+          <div class="card__header h-48 w-full sm:h-auto">
+            <!-- <img class="card__img w-full h-full" src="//source.unsplash.com/500x301/?nature"/> -->
+            <%= image_tag 'rent_your_skate.png', height: 301, weight: 500, class: "card__img w-full h-full"%>
+          </div>
+          <div class="card__body p-4">
+            <h3 class="card__title my-1">Rent Your Skate</h3>
+            <p class="card__content">Le Airbnb des équipements sportifs</p>
+          </div>
+        </div>
+      </button>
+<!--       RENT YOUR SKATE MODAL -->
       <div class="modal fade" id="rwsModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -55,11 +65,20 @@
     </div>
 
     <div class="col-sm-4 col-sm-offset-2">
-      <div class="card-projects">
-        <button class="card-category gg_project" data-toggle="modal" data-target="#ggModal"></button>
-        <h3>GreenGuide</h3>
-    </div>
-
+      <!--       GREENGUIDE CARD BUTTON -->
+      <button class="card-category" data-toggle="modal" data-target="#ggModal">
+        <div class="card bg-white overflow-hidden shadow rounded">
+          <div class="card__header h-48 w-full sm:h-auto">
+            <!-- <img class="card__img w-full h-full" src="//source.unsplash.com/500x301/?nature"/> -->
+            <%= image_tag 'greenguide.png', height: 301, weight: 500, class: "card__img w-full h-full"%>
+          </div>
+          <div class="card__body p-4">
+            <h3 class="card__title my-1">GreenGuide</h3>
+            <p class="card__content"> Le Mapstr de l'écologie</p>
+          </div>
+        </div>
+      </button>
+      <!--       GREENGUIDE CARD BUTTON -->
       <div class="modal fade" id="ggModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
