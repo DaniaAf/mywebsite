@@ -7,12 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 experiences = [
   {
-    role: 'Teacher Assistant',
+    role: 'Coding Teacher Assistant',
     company: 'Le Wagon',
-    datebegin: 'Avril 2019',
-    dateend: 'Avril 2019',
+    datebegin: 'depuis Avril 2019',
+    dateend: '',
     contract: 'Freelance',
-    description: 'Aide les étudiants du wagon dans leurs exercices au cours de leur formation',
+    description: 'Aider les étudiants du wagon dans leurs exercices au cours de leur formation sur:
+     - Ruby on Rails,
+     - HTML/CSS,
+     - Javascript,
+     - PostgreSQL,
+     - Bootstrap,
+     - Git,
+     - Github...',
     photo: 'wagon_logo.png',
     # photo: 'https://images.ecosia.org/Ui2ZtzX_sPJ7ENeTS_Sb5pJZKDU=/0x390/smart/https%3A%2F%2Fcourse_report_production.s3.amazonaws.com%2Frich%2Frich_files%2Frich_files%2F1692%2Fs300%2Fle-wagon-logo.png',
   },
@@ -22,7 +29,7 @@ experiences = [
     datebegin: 'Fevrier 2019',
     dateend: 'Avril 2019',
     contract: 'Projet personnel',
-    photo: 'greenguide.png',
+    photo: 'GreenGuide_logo2.png',
     # photo: 'https://images.ecosia.org/7n_VKIKZBjAjMnQQ5UFD9STp7LA=/0x390/smart/http%3A%2F%2Fsupasport.co.nz%2Fwp-content%2Fuploads%2F2015%2F01%2FSNS-Spot-Marker-Green.jpg',
     description: "Au sein du bootcamp du Wagon, 3 camarades et moi même avons entrepris un projet que nous avons codé en 10 jours: Green Guide.
 GreenGuide est une web app codée par une équipe 100% féminine.
@@ -45,7 +52,8 @@ Vous pouvez également suggérer des lieux s’ils ne sont pas référencés sur
     contract: 'CDD',
     photo: 'papernest_logo.png',
     # photo: 'https://images.ecosia.org/GIqfqMrpSRqdcLbnNSGzrGsKvK4=/0x390/smart/https%3A%2F%2Fwww.papernest.com%2Fstatic%2Fmain_site%2Fimages%2Fpress_release%2Fkit_logo_white.png',
-    description: '- Etude de marché sur un nouveau canal d’acquisition
+    description: 'Au sein de l\'équipe commerciale, j\'ai pour mission de tester et développer un nouveau canal d\'acquisition pour en comprendre le potentiel.
+    - Etude de marché sur un nouveau canal d’acquisition
 - Mise en place de la stratégie commerciale
 - Mise en place d’outils de suivi et KPI
 - Recrutement, formation et management d’une ambassadrice papernest'
@@ -58,11 +66,14 @@ Vous pouvez également suggérer des lieux s’ils ne sont pas référencés sur
     contract: 'CDD',
     photo: 'papernest_logo.png',
     # photo: 'https://images.ecosia.org/GIqfqMrpSRqdcLbnNSGzrGsKvK4=/0x390/smart/https%3A%2F%2Fwww.papernest.com%2Fstatic%2Fmain_site%2Fimages%2Fpress_release%2Fkit_logo_white.png',
-    description: '- Prospection terrain & téléphonique
+    description: 'J\'intègre papernest en Novembre 2017 dans l\'équipe commerciale qui venait tout juste de naître. Nous étions alors 3 dans l\'équipe.
+J\'ai pu voir et contribuer à toute l\'évolution de ce pôle en termes stratégique, opérationnel et effectif qui représente aujourd’hui 17 business developers.
+
+    - Prospection terrain & téléphonique
 - Négociation et mise en place de partenariats
 - Formation des équipes des partenaires
 - Suivi de la relation client
-- Formation des nouveaux business developer',
+- Formation des nouveaux business developers',
   },
   {
     role: 'Apprentie- Assistante Category Channel Sales Development',
@@ -96,7 +107,9 @@ CATEGORY MANAGEMENT & BUSINESS ANALYSIS:
     contract: 'stage',
     photo: 'beiersdorf_logo.png',
     # photo: 'https://images.ecosia.org/46dQAlQHVx2B24oVaUzyYBZmM2k=/0x390/smart/http%3A%2F%2Fthinkergy.com%2Fwp-content%2Fuploads%2F2018%2F03%2Flogo-beiersdorf.png',
-    description: '- Suivi et analyse des performances de la catégorie circuits et clients
+    description: 'Groupe de nombreuses marques de cosmétiques (Nivea, Labello, Eucerin etc…), j\'intègre Beiersdorf dans une équipe de 5 managers (un merchandiser, 3 catégorie-managers pour chaque catégories et une category manager toutes categories).
+
+    - Suivi et analyse des performances de la catégorie circuits et clients
 - Analyse des assortiments et recommandations d’optimisation
 - Participation aux démarches catégorielles
 - Préparation des points marchés catégoriels
@@ -114,7 +127,9 @@ CATEGORY MANAGEMENT & BUSINESS ANALYSIS:
     contract: 'stage',
     photo: 'la_martiniquaise_logo.png',
     # photo: 'https://images.ecosia.org/gXRDbd9OBH6Fv61O_39sgVKY_T4=/0x390/smart/https%3A%2F%2Fmedia.glassdoor.com%2Fsqll%2F1132539%2Fla-martiniquaise-squarelogo-1456232619822.png',
-    description: '- Élaboration des préconisations merchandising magasin
+    description: 'La Martiniquaise est une entreprise française spécialisée dans la fabrication et la distribution de vins et spiritueux  (Poliakov, Label 5, Saint-James, Old Nick...)
+
+    - Élaboration des préconisations merchandising magasin
 - Analyse des plans nationaux
 - Création de dossiers destinés à la force de vente
 - Développement d\'argumentaires produits
@@ -137,26 +152,26 @@ educations = [
     dateend: '2011',
     photo: "bac_logo.png",
     diploma: 'Baccalauréat S option Mathématique',
-    description: 'blablabalbalbal'
+    description: ''
   },
   {
     school: 'Paul Valery - Paris',
     datebegin: '2011',
     dateend: '2013',
-    photo: "concours_logo.png",
+    photo: "prepa.png",
     diploma: 'Prépa ECS',
     description: 'Classes préparatoires Economiques et Commerciales option Scientifique (ECS) aux Grandes Ecoles de Commerces'
   },
   {
-    school: 'SKEMA Business School - Sophia Antipolis & Suzhou',
+    school: 'SKEMA Business School - Nice & Suzhou',
     datebegin: '2013',
     dateend: '2017',
-    photo: "skema_logo.png",
-    diploma: 'Master2 Connected Marketing & Business Development',
-    description: '- Master 2 : Connected Marketing & Business Development (en Apprentissage chez Nestlé)
-- Césure (1an):  stage Merchandising à La Martiniquaise, stage Category Manager chez Beiersdorf (Nivea)
-- Master 1:  Campus Suzhou, CHINE
-- License 3: Campus Sophia-Antipolis, et stage à Londres'
+    photo: "skema_black.png",
+    diploma: 'Master 2 Marketing & Business Development',
+    description: '- M2: en Apprentissage chez Nestlé
+- Césure:  stages La Martiniquaise & Beiersdorf
+- M1:  Campus Suzhou, CHINE
+- L3: Campus Sophia-Antipolis'
   },
   {
     school: 'Le Wagon - Paris',
