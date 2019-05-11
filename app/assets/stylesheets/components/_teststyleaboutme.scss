@@ -62,7 +62,7 @@
 
 .content_test_2 {
   height: 60vh;
-  padding: 20px;
+  padding: 13px;
   background-color: rgb(245,245,245);
   border-left: solid;
   border-right: solid;
@@ -82,3 +82,18 @@
 //   padding-top: 60px;
 //   margin-top: -60px;
 // }
+
+
+.test-active {
+  font-size: 30px;
+  color: black;
+}
+
+.test-active:hover {
+  font-size: 60px;
+  color: red;
+}
+.hovers{
+  font-size: 60px;
+  color: red;
+}

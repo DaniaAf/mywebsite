@@ -27,25 +27,7 @@
 
 
   <!-- EDUCATION -->
-  <div id="anchor_education" class="education_paragraph">
-    <h2 class="titles">Education</h2>
-    <section id="timeline">
-      <% @educations.each do |education| %>
-        <div class="tl-item">
-          <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
-          </div>
-          <div class="tl-year">
-            <p class="f2 heading--sanSerif"><%= education.dateend %></p>
-          </div>
-          <div class="tl-content">
-            <h1 class="f3 text--accent ttu"><%= education.school %></h1>
-            <h2><%= education.diploma %></h2>
-            <p> <%= simple_format(education.description) %> </p>
-          </div>
-        </div>
-      <% end %>
-    </section>
-  </div>
+  <%= render "education" %>
 
   <!-- CONTACT ME -->
   <div id="anchor_contact_me" class="contact_me_paragraph">
@@ -80,6 +62,8 @@
       </div>
     <% end %>
   </div>
+
+  <h5 class="test-active">Helloooo</h5>
 
   <!-- FOOTER -->
   <div class="footer">

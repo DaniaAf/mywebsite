@@ -11,6 +11,7 @@ import { scrollAction } from '../components/anchor';
 // import { scrollActionNavEducation } from '../components/anchor';
 // import { scrollActionNavContactMe } from '../components/anchor';
 import { languagesMouseOver } from '../components/languages_mouseover';
+import { simulatingHoverForExperiences } from '../components/simulating_hover_for_mobile';
 
 // hideCodingTools();
 // hideOtherTools();
@@ -23,3 +24,4 @@ scrollAction();
 // scrollActionNavEducation();
 // scrollActionNavContactMe();
 languagesMouseOver();
+simulatingHoverForExperiences();

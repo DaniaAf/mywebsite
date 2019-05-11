@@ -96,6 +96,15 @@
   color: $gray;
 }
 
+@media (min-width: 576px) {
+  .container_test_2 {
+    max-width: none;
+  }
+}
+// @media (min-width: 576px) {
+//   .container_test_2 {
+//     max-width: none;
+// }
 
 /////// PHOTO SEPARATOR /////
 

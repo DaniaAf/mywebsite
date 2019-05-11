@@ -34,3 +34,9 @@
   margin-top: -72px;
   border: none;
 }
+
+@media (min-width: 576px) {
+  .container_adjectives {
+    max-width: none;
+  }
+}

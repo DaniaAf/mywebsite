@@ -3,6 +3,11 @@
   margin-bottom: 30px;
 }
 
+.col-experiences {
+  display: flex;
+  justify-content: center;
+}
+
 article.card_exp {
   /*position: absolute;
   left: 50%;
@@ -44,7 +49,8 @@ article.card_exp .infos_exp .title_exp {
   letter-spacing: 3px;
   color: #152536;
   font-family: "Grotesque Black", sans-serif;
-  font-size: 1rem;
+/*  font-size: 1rem;*/
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-shadow: 0 0 0px #32577f;
 }
@@ -64,7 +70,8 @@ article.card_exp .infos_exp .date_exp,
 article.card_exp .infos_exp .seats_exp {
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 0.85rem;
+/*  font-size: 0.85rem;*/
+  font-size: 1rem;
   color: rgba(21, 37, 54, 0.7);
   font-family: "Grotesque", sans-serif;
 }
@@ -79,7 +86,8 @@ article.card_exp .infos_exp .seats_exp {
 article.card_exp .infos_exp .txt_exp {
   font-family: "Merriweather", sans-serif;
   line-height: 2;
-  font-size: 0.95rem;
+/*  font-size: 0.95rem;*/
+  font-size: 1rem;
   color: rgba(21, 37, 54, 0.7);
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
@@ -94,23 +102,43 @@ article.card_exp .infos_exp .details_exp {
   letter-spacing: 1px;
   color: #4e958b;
   font-family: "Grotesque Black", sans-serif;
-  font-size: 0.9rem;
+/*  font-size: 0.9rem;*/
+  font-size: 1.35rem;
   text-transform: uppercase;
   cursor: pointer;
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
-article.card_exp:active .infos_exp,
 article.card_exp:hover .infos_exp {
   -webkit-transform: translateY(-260px);
           transform: translateY(-260px);
 }
-article.card_exp:active .infos_exp .seats_exp,
+
+article.card_exp:active .infos_exp {
+  -webkit-transform: translateY(-260px);
+          transform: translateY(-260px);
+}
+
+.hover {
+    -webkit-transform: translateY(-260px);
+          transform: translateY(-260px);
+    opacity: 1;
+}
+
+.color-text {
+  opacity: 1 !important;
+}
+
+
 article.card_exp:hover .infos_exp .seats_exp,
-article.card_exp:active .infos_exp .txt_exp,
 article.card_exp:hover .infos_exp .txt_exp,
-article.card_exp:active .infos_exp .details_exp,
 article.card_exp:hover .infos_exp .details_exp {
+  opacity: 1;
+}
+
+article.card_exp:active .infos_exp .seats_exp,
+article.card_exp:active .infos_exp .txt_exp,
+article.card_exp:active .infos_exp .details_exp {
   opacity: 1;
 }
 

@@ -1,0 +1,63 @@
+<div id="anchor_education" class="education_paragraph">
+  <h2 class="titles">Education</h2>
+  <section class="container container-education" id="timeline">
+
+    <div class="row rowOne">
+      <% @educations.first(2).each do |education| %>
+        <div class="tl-item ">
+          <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
+          </div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif"><%= education.dateend %></p>
+          </div>
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu"><%= education.school %></h1>
+            <h2><%= education.diploma %></h2>
+            <p> <%= simple_format(education.description) %> </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="row rowTwo">
+      <% @educations.last(2).each do |education| %>
+        <div class="tl-item ">
+          <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
+          </div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif"><%= education.dateend %></p>
+          </div>
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu"><%= education.school %></h1>
+            <h2><%= education.diploma %></h2>
+            <p> <%= simple_format(education.description) %> </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+
+  </section>
+</div>
+
+
+
+<!-- <div id="anchor_education" class="education_paragraph">
+  <h2 class="titles">Education</h2>
+  <section id="timeline">
+    <% @educations.each do |education| %>
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(<%= image_path "#{education.photo}" %>)">
+        </div>
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif"><%= education.dateend %></p>
+        </div>
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu"><%= education.school %></h1>
+          <h2><%= education.diploma %></h2>
+          <p> <%= simple_format(education.description) %> </p>
+        </div>
+      </div>
+    <% end %>
+  </section>
+</div> -->
