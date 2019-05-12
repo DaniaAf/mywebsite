@@ -4,10 +4,19 @@ body {
   line-height: 1.75;
 }
 
-#timeline {
-  display: flex;
-  background-color: #031625;
+@media (min-width: 1000px ) {
+  #timeline {
+    display: flex;
+    background-color: #031625;
+  }
 }
+
+@media (max-width: 1000px ) {
+  #timeline {
+    background-color: #031625;
+  }
+}
+
 #timeline:hover .tl-item {
 /*  width: 23.3333%;*/
   width: 48%;
@@ -140,7 +149,13 @@ body {
   margin-top: -72px;
 }
 
-/*pour qu'animation soit adaptable sur mobile avec click*/
+@media (max-width: 1000px ) {
+  #anchor_education {
+    margin-top: 263px;
+  }
+}
+
+/*pour que l'animation soit responsive sur mobile lors du click*/
 @media (max-width: 1000px ) {
   .tl-item-media {
     transition: width 0.5s ease;
@@ -169,8 +184,17 @@ body {
   }
 }
 
-@media (min-width: 576px ) {
+/*ENLEVER POUR TEST DU GAP SUR PORTABLE*/
+/*@media (min-width: 576px ) {
   .container-education {
   max-width: none;
   }
 }
+*/
+
+/*@media (min-width: 576px ) {
+  .container-education {
+  max-width: 100%;
+  }
+}
+*/
