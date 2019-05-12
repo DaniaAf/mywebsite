@@ -119,14 +119,19 @@ article.card_exp:active .infos_exp {
           transform: translateY(-260px);
 }
 
-.hover {
+
+
+@media (max-width: 1000px ) {
+  .hover-media {
     -webkit-transform: translateY(-260px);
           transform: translateY(-260px);
     opacity: 1;
-}
+  }
 
-.color-text {
-  opacity: 1 !important;
+  .color-text {
+    opacity: 1 !important;
+  }
+
 }
 
 
