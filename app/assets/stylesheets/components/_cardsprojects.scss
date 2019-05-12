@@ -10,10 +10,15 @@
   margin-bottom: 30px;
 }
 
-button.card-category{
+.card-category{
   width: 100% !important;
   padding: 0 !important;
+  cursor: pointer;
 
+}
+
+.card-rws {
+  margin-bottom: 20px;
 }
 
 .card__body {

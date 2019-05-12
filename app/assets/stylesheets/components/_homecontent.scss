@@ -11,6 +11,13 @@
   height: 100vh;
 }
 
+@media (max-width: 1000px ) {
+  .main-image  {
+    background: asset-url("blackwhite3.png");
+  // background-size: cover;
+  }
+}
+
 .fa-chevron-down {
   // display: flex;
   // justify-content: center;
@@ -116,6 +123,13 @@
   border-bottom: solid;
 }
 
+@media (max-width: 1000px ) {
+  .photo_separator1  {
+    background: url("https://images.unsplash.com/photo-1426024025799-8cf58f5df5a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80");
+    background-size: cover;
+  }
+}
+
 .photo_separator2 {
   background: url("https://images.unsplash.com/photo-1529661197280-63dc545366c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80") fixed no-repeat top left;
   width: 100%;
@@ -125,6 +139,13 @@
   border-bottom: solid;
 }
 
+@media (max-width: 1000px ) {
+  .photo_separator2  {
+    background: url("https://images.unsplash.com/photo-1529661197280-63dc545366c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+    background-size: cover;
+  }
+}
+
 .photo_separator3 {
   background: asset-url("wagon_locaux.png") fixed no-repeat top left;
   width: 100%;
@@ -132,6 +153,13 @@
   background-size: cover;
   border-top: solid;
   border-bottom: solid;
+}
+
+@media (max-width: 1000px ) {
+  .photo_separator3  {
+    background: asset-url("wagon_locaux.png");
+    background-size: cover;
+  }
 }
 
 

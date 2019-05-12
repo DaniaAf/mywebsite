@@ -42,6 +42,12 @@
   // border-bottom: solid;
 }
 
+@media (max-width: 1000px ) {
+  .content_test_2  {
+    min-height: 67vh !important;
+  }
+}
+
 .row_test_2 {
   border-top: solid;
   border-bottom: solid;
@@ -79,6 +85,12 @@
   background-size: cover;
 }
 
+@media (max-width: 1000px ) {
+  .image2_2  {
+  background: url("https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=947&q=80");
+  // background-size: cover;
+  }
+}
 // #anchor_about_me{
 //   padding-top: 60px;
 //   margin-top: -60px;

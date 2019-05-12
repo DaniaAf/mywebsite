@@ -3,6 +3,10 @@
 }
 */
 
+.row.skills.languages {
+  margin-top: 35px;
+}
+
 .all_languages {
   width: 100%;
   border-bottom: solid;
@@ -17,6 +21,12 @@
 @media (min-width: 576px) {
   .container_all_languages {
     max-width: none;
+  }
+}
+
+@media (max-width: 1000px ) {
+  .skill.language {
+    margin-bottom: 30px;
   }
 }
 

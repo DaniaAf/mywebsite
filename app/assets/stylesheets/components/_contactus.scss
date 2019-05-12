@@ -1,7 +1,18 @@
-form#new_contact {
-  width: 40%;
-  margin: auto;
+
+@media (max-width: 1000px ) {
+  form#new_contact {
+    width: 80%;
+    margin: auto;
+  }
 }
+
+@media (min-width: 1000px ) {
+  form#new_contact {
+    width: 40%;
+    margin: auto;
+  }
+}
+
 
 input {
   width: 100%;
@@ -44,9 +55,15 @@ input.button {
   text-align: center;
 }
 
+input.button.btn.btn-default {
+  width: fit-content !important;
+}
+
 #anchor_contact_me{
   padding-top: 72px;
   margin-top: -72px;
 }
+
+
 
 
