@@ -1,13 +1,28 @@
-.skills {
+// .skills {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 50px;
+//   margin-bottom: 40px;
+//   padding-top: 20px;
+// }
+
+// .skill {
+//   text-align: center;
+// }
+
+.row.all_row_skills {
   display: flex;
-  justify-content: space-around;
-  margin-top: 70px;
-  margin-bottom: 40px;
-  padding-top: 20px;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 35px !important;
 }
 
-.skill {
-  text-align: center;
+h3.skills-title {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: -13px;
+  display: flex;
+  justify-content: center;
 }
 
 .adjectives {

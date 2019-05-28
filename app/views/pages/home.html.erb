@@ -30,38 +30,9 @@
   <%= render "education" %>
 
   <!-- CONTACT ME -->
-  <div id="anchor_contact_me" class="contact_me_paragraph">
-    <h2 class="titles">Contact me</h2>
-    <%= form_for @contact do |f|  %>
-      <div class="section_form">
-        <%= f.label :name %><br>
-        <%= f.text_field :name, required: true %>
-      </div>
 
-      <br>
+  <%= render "contact_me" %>
 
-      <div class="section_form">
-        <%= f.label :email %><br>
-        <%= f.text_field :email, required: true %>
-      </div>
-
-      <br>
-
-      <div class="section_form message">
-        <%= f.label :message %><br>
-        <%= f.text_field :message, as: :text %>
-      </div>
-
-      <div class="hidden">
-        <%= f.label :nickname %><br>
-        <%= f.text_field :nickname, hint: 'leave this field blank' %>
-      </div>
-
-      <div class="section_form contact-button">
-        <%= f.submit 'Send Message', class: "button btn btn-default" %>
-      </div>
-    <% end %>
-  </div>
 
   <!-- FOOTER -->
   <div class="footer">

@@ -13,6 +13,7 @@ import { scrollAction } from '../components/anchor';
 import { languagesMouseOver } from '../components/languages_mouseover';
 import { simulatingHoverForExperiences } from '../components/simulating_hover_for_mobile';
 import { simulatingHoverForEducation } from '../components/simulating_hover_for_mobile';
+import { validationContactForm } from '../components/validation_contact_form';
 
 // hideCodingTools();
 // hideOtherTools();
@@ -27,3 +28,4 @@ scrollAction();
 languagesMouseOver();
 simulatingHoverForExperiences();
 simulatingHoverForEducation();
+validationContactForm();

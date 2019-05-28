@@ -63,6 +63,15 @@
   border-color: white;
 }
 
+@media (max-width: 1000px ) {
+  .content-photo img {
+    display: none;
+  }
+  #ancre_button {
+    display: none;
+  }
+}
+
 .name-and-role {
   position: absolute;
   top: 10%;

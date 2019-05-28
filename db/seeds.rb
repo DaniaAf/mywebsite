@@ -29,7 +29,7 @@ experiences = [
     datebegin: 'Fevrier 2019',
     dateend: 'Avril 2019',
     contract: 'Projet personnel',
-    photo: 'GreenGuide_logo2.png',
+    photo: 'GreenGuide_logo4.png',
     # photo: 'https://images.ecosia.org/7n_VKIKZBjAjMnQQ5UFD9STp7LA=/0x390/smart/http%3A%2F%2Fsupasport.co.nz%2Fwp-content%2Fuploads%2F2015%2F01%2FSNS-Spot-Marker-Green.jpg',
     description: "Au sein du bootcamp du Wagon, 3 camarades et moi même avons entrepris un projet que nous avons codé en 10 jours: Green Guide.
 GreenGuide est une web app codée par une équipe 100% féminine.

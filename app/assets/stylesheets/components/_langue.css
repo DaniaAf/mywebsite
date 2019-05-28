@@ -87,6 +87,15 @@ svg {
   }
 }
 
+h3.language2 {
+  display: flex;
+  justify-content: center;
+}
+
+h3.language2 {
+  display: flex;
+  justify-content: center;
+}
 #anchor_languages{
   padding-top: 72px;
   margin-top: -72px;
