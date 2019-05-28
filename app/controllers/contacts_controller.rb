@@ -12,5 +12,6 @@ class ContactsController < ApplicationController
     else
       flash[:alert] = "Cannot send message."
     end
+    # redirect_to root_path
   end
 end
