@@ -10,7 +10,7 @@ const scrollAction = () => {
       'direction': 'bottom',
       'duration': 2000,
       'easingPreset': 'easeInQuad',
-      'scrollAmount': `${targetScroll.offsetTop + 20}`
+      'scrollAmount': `${targetScroll.offsetTop + 22}`
     });
   })
 }

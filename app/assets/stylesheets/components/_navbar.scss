@@ -14,6 +14,12 @@
 
 /* Main navbar */
 
+@media (max-width: 1000px) {
+  .la-navbar {
+    display: none;
+  }
+}
+
 a {
   font-family: 'Work Sans', sans-serif;
 }

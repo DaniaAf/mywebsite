@@ -5,6 +5,11 @@
 
 .row.skills.languages {
   margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.skill.language {
+  text-align: center;
 }
 
 .all_languages {

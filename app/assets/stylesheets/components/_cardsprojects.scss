@@ -34,6 +34,29 @@
 
 .carousel-item {
   text-align: center;
+  img {
+    width: auto;
+  }
+}
+
+
+@media (max-width: 1000px ) {
+  .carousel-item img.first-image{
+    width: 100% !important;
+  }
+}
+
+.carousel-item {
+  text-align: center;
+  img.rws-photos {
+    width: inherit;
+  }
+}
+
+@media (max-width: 1000px ) {
+  .carousel-item img.rws-photos{
+    height: auto !important;
+  }
 }
 
 .carou-arrow {
@@ -53,4 +76,6 @@
 img.card__img.w-full.h-full{
   width: 100%;
 }
+
+
 
